@@ -7,6 +7,7 @@ To develop a Django application to store and retrieve data from a database using
 
 Include your ER diagram here
 
+
 ## DESIGN STEPS
 
 ### STEP 1:
@@ -29,6 +30,26 @@ runserver 0:8000
 ## PROGRAM
 
 Include your code 
+```py
+#FROM Admin.py
+from django.contrib import admin
+from .models import Student,StudentAdmin
+# Register your models here.
+admin.site.register(Student,StudentAdmin)
+#FROM Models.py
+from django.db import models
+from django.contrib import admin
+
+# Create your models here.
+class Student (models.Model):
+    referenceno=models.CharField(primary_key=True,max_length=20,help_text="referenceno")
+    name=models.CharField(max_length=100)
+    age=models.IntegerField()
+    email=models.EmailField()
+    mobileno=models.IntegerField()
+class StudentAdmin (admin.ModelAdmin):
+    list_display=('referenceno','name','age','email','mobileno')
+```
 
 
 ## OUTPUT
@@ -39,3 +60,4 @@ Include the screenshot of your admin page.
 
 
 ## RESULT
+We have succesfully created 10 students user as a superuser.
