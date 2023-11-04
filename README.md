@@ -31,11 +31,13 @@ runserver 0:8000
 
 Include your code 
 ```py
+
 #FROM Admin.py
 from django.contrib import admin
 from .models import Student,StudentAdmin
 # Register your models here.
 admin.site.register(Student,StudentAdmin)
+
 #FROM Models.py
 from django.db import models
 from django.contrib import admin
