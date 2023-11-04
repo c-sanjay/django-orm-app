@@ -5,9 +5,6 @@ To develop a Django application to store and retrieve data from a database using
 
 ## Entity Relationship Diagram
 
-Include your ER diagram here
-
-
 ## DESIGN STEPS
 
 ### STEP 1:
@@ -28,8 +25,6 @@ runserver 0:8000
 
 
 ## PROGRAM
-
-Include your code 
 ```py
 
 #FROM Admin.py
@@ -55,9 +50,6 @@ class StudentAdmin (admin.ModelAdmin):
 
 
 ## OUTPUT
-
-Include the screenshot of your admin page.
-
 ![](./adminpage.png)
 
 
