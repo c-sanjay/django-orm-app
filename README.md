@@ -26,7 +26,6 @@ runserver 0:8000
 
 ## PROGRAM
 ```py
-
 #FROM Admin.py
 from django.contrib import admin
 from .models import Student,StudentAdmin
